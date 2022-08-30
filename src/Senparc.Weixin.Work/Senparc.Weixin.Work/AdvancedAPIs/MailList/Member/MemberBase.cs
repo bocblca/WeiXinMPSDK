@@ -74,6 +74,10 @@ namespace Senparc.Weixin.Work.AdvancedAPIs.MailList.Member
         /// 上级字段，个数必须和department一致，表示在所在的部门内是否为上级。
         /// </summary>
         public int[] is_leader_in_dept { get; set; }
+        ///新增direct_leader字段
+        ///上级字段，成员的直接上级列表
+        //文档位置https://developer.work.weixin.qq.com/document/path/90197
+        public string[] direct_leader {get;set;}
         /// <summary>
         /// 启用/禁用成员。1表示启用成员，0表示禁用成员
         /// </summary>
