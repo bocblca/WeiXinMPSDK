@@ -46,7 +46,9 @@ namespace Senparc.Weixin.Work.Entities
         /// <summary>
         ///	审批模板id
         /// </summary>
-        public uint OpenTemplateId { get; set; }
+        
+        
+        public string OpenTemplateId { get; set; }
 
         /// <summary>
         /// 申请单当前审批状态：1-审批中；2-已通过；3-已驳回；4-已撤销
@@ -130,7 +132,7 @@ namespace Senparc.Weixin.Work.Entities
         /// <summary>
         /// 抄送人userid
         /// </summary>
-        public string ItemUserid { get; set; }
+        public string ItemUserId { get; set; }
 
         /// <summary>
         /// 抄送人所在部门
@@ -155,7 +157,7 @@ namespace Senparc.Weixin.Work.Entities
         /// <summary>
         /// 分支审批人操作时间
         /// </summary>
-        public byte ItemOpTime { get; set; }
+        public long ItemOpTime { get; set; }
     }
 
     public partial class OpenApprovalNotifyNode
