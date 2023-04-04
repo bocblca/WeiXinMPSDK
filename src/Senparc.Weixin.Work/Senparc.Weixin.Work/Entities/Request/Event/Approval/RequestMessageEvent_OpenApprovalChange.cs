@@ -46,7 +46,7 @@ namespace Senparc.Weixin.Work.Entities
         /// <summary>
         ///	审批模板id
         /// </summary>
-        public uint OpenTemplateId { get; set; }
+        public string OpenTemplateId { get; set; }
 
         /// <summary>
         /// 申请单当前审批状态：1-审批中；2-已通过；3-已驳回；4-已撤销
