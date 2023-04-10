@@ -160,7 +160,9 @@ namespace Senparc.Weixin.Work.Entities
         /// <summary>
         /// 分支审批人操作时间
         /// </summary>
-        public byte ItemOpTime { get; set; }
+        //public byte ItemOpTime { get; set; }
+        //ItemOpTime字段是unix时间戳，应该为long
+        public long ItemOpTime { get; set; }
     }
 
     public partial class OpenApprovalNotifyNode
