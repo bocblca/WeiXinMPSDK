@@ -74,6 +74,12 @@ namespace Senparc.Weixin.Work.AdvancedAPIs.MailList.Member
         /// 上级字段，个数必须和department一致，表示在所在的部门内是否为上级。
         /// </summary>
         public int[] is_leader_in_dept { get; set; }
+        
+        //应增加direct_leader字段
+        //企业微信地址：https://developer.work.weixin.qq.com/document/path/90197
+        //批量更新企业微信成员的上级时需要这个字段
+        public string[] direct_leader {get;set;}
+        
         /// <summary>
         /// 启用/禁用成员。1表示启用成员，0表示禁用成员
         /// </summary>
